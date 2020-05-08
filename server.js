@@ -15,8 +15,11 @@ connection.once(`open`,()=>{
     console.log(`Connected`);
 });
 
+const recipeRouter = require('./routes/recipes');
+
 app.use(cors());
 app.use(express.json());
+app.use('/recipes',recipeRouter);
 
 app.get("/",(req,res)=>{
     res.send({message: 'Welcome to the API!'});
@@ -26,4 +29,3 @@ app.listen(port,()=>{
     console.log(`Listening on ${port}`);
 });
 
-//mongodb://admin:password1@ds233531.mlab.com:33531/fast-cook

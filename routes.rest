@@ -1,0 +1,19 @@
+GET http://localhost:5000/
+
+###
+GET http://localhost:5000/recipes
+
+###
+POST http://localhost:5000/recipes/add
+Content-Type: application/json
+
+{
+    "recipe_title": "Hot Water",
+    "author": "Kams",
+    "preparation_time": 20,
+    "is_vegetarian": true,
+    "categories": ["Vegetarian","Watery","Beverage"],
+    "photo_url": "https://thumbor.thedailymeal.com/PAHJHRbSHa5048uBChXJ_KECceM=/870x565/https://www.theactivetimes.com/sites/default/files/uploads/0/0-shutterstock_282501269_1.jpg",
+    "ingredients":["Water"],
+    "recipe":["Boil the water LMAO"]
+}

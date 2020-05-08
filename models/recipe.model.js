@@ -28,11 +28,11 @@ const RecipeSchema = new Schema({
         required:true
     },
     ingredients:{
-        type: String,
+        type: Array,
         required:true
     },
     recipe:{
-        type: String,
+        type: Array,
         required:true
     },
     dateSubmitted:{
