@@ -17,3 +17,22 @@ Content-Type: application/json
     "ingredients":["Water"],
     "recipe":["Boil the water LMAO"]
 }
+
+###
+POST http://localhost:5000/recipes/update/5eb5cee1d5cfde114ba0ba95
+Content-Type: application/json
+
+{
+    "recipe_title": "Hot Water",
+    "author": "Kams",
+    "preparation_time": 69,
+    "is_vegetarian": true,
+    "categories": ["Watery","Beverage"],
+    "photo_url": "https://thumbor.thedailymeal.com/PAHJHRbSHa5048uBChXJ_KECceM=/870x565/https://www.theactivetimes.com/sites/default/files/uploads/0/0-shutterstock_282501269_1.jpg",
+    "ingredients":["Water", "Pan"],
+    "recipe":["Boil the water LMAO"]
+}
+
+###
+
+DELETE http://localhost:5000/recipes/5eb5cee1d5cfde114ba0ba95
